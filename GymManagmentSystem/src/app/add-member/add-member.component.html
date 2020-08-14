@@ -1,0 +1,146 @@
+
+<div class="container">
+  <button class="btn btn-dark" style="margin: 20px;">Reset</button>
+
+  <button class="btn btn-dark" style="margin: 20px;">Save</button>
+
+  <button class="btn btn-dark" style="margin: 20px;" >Print</button>
+
+   <!-- <form #BillForm="ngForm" (ngSubmit)="onSubmit()", BillForm.Reset()> -->
+<form style="width: 50%;">
+
+
+
+    <div class="form-group" style="margin-top: 20px;">
+
+      <label>Name:</label>
+      <input  type="text" class="form-control" >
+
+    </div>
+    <div class="form-group">
+
+      <label>Height:</label>
+      <input type="text" class="form-control" placeholder="in Inch">
+
+    </div>
+    <div class="form-group">
+
+      <label>Weight</label>
+      <input type="text" class="form-control" placeholder="in pound">
+
+    </div>
+    <div class="form-group">
+
+      <label>Weight</label>
+      <input type="text" class="form-control" placeholder="in pound">
+
+    </div>
+    <div class="form-group">
+
+      <label>Phone Number</label>
+      <input type="tel" class="form-control">
+
+    </div>
+
+    <div class="form-group">
+      <label>Shift</label>
+      <div class="row" style="margin:10px;">
+        <label class="md-check">
+          <input type="radio" value="am" name="am" formControlName="am">
+          am
+        </label>
+
+        <label class="md-check" style="margin-left:20px">
+          <input type="radio" value="pm" name="pm" formControlName="pm">
+          pm
+        </label>
+      </div>
+    </div>
+    <!--Shift time
+
+  //radio button
+  // am
+  // pm
+-->
+    <div class="form-group">
+
+      <label>Email</label>
+      <input type="Email" class="form-control">
+
+    </div>
+
+
+    <div class="form-group">
+      <label>Class:</label>
+      <select class="form-control" >
+        <option *ngFor="let Te of ">
+          {{Te.title1}}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Diseases:</label>
+      <input type="text" class="form-control" placeholder="If Any" >
+    </div>
+    <div class="form-group">
+      <label>DOB:</label>
+      <input type="date" class="form-control" >
+    </div>
+
+
+    <div class="form-group">
+      <label>Gender</label>
+      <div class="row" style="margin:10px;">
+        <label class="md-check">
+          <input type="radio" value="female" name="gender" formControlName="gender">
+          Female
+        </label>
+
+        <label class="md-check" style="margin-left:20px">
+          <input type="radio" value="male" name="gender" formControlName="gender">
+          Male
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Type</label>
+      <select class="form-control" >
+        <option *ngFor="let Te of ">
+          {{Te.title1}}
+        </option>
+      </select>
+    </div>
+
+  <div class="form-group">
+    <label>Amount:</label>
+    <input type="text" class="form-control" >
+  </div>
+  <div class="form-group">
+    <label>Payment</label>
+    <div class="row" style="margin:10px;">
+      <label class="md-check">
+        <input type="radio" value="cash" name="cash" formControlName="cash">
+        cash
+      </label>
+
+      <label class="md-check" style="margin-left:20px">
+        <input type="radio" value="card" name="card" formControlName="card">
+        card
+      </label>
+    </div>
+  </div>
+
+
+  <!-- <input
+  style="display: none"
+  type="file" (change)="onFileChanged($event)"
+  #fileInput>
+<button class="btn btn-dark" (click)="fileInput.click()">Select File</button> -->
+
+
+
+  </form>
+
+  </div>

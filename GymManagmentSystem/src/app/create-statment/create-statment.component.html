@@ -1,0 +1,100 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" routerLink="/HomePage">PowerHouseGym</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Save<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Reset<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">print<span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+  </div>
+  </nav>
+
+<div class="container">
+  <!-- <button class="btn btn-dark" style="margin: 20px;">Reset</button>
+
+  <button class="btn btn-dark" style="margin: 20px;">Save</button>
+
+  <button class="btn btn-dark" style="margin: 20px;" >Print</button> -->
+
+   <!-- <form #BillForm="ngForm" (ngSubmit)="onSubmit()", BillForm.Reset()> -->
+<form>
+
+    <div class="form-group" style="margin-top: 20px;">
+      <label>Coach ID</label>
+      <input type="number" class="form-control" >
+      <!-- <input type="text" required class="form-control" [class.is-invalid]="name.invalid && name.touched" name="name" [(ngModel)]="Emp.EmpName"> -->
+      <!-- <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small> -->
+    </div>
+
+
+
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" class="form-control" >
+
+    </div>
+    <div class="form-group">
+      <label>Class:</label>
+      <select class="form-control" >
+        <option *ngFor="let Te of ">
+          {{Te.title1}}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Period Beginning:</label>
+      <input type="date" class="form-control" >
+    </div>
+
+    <div class="form-group">
+      <label>Period Ending:</label>
+      <input type="date" class="form-control" >
+    </div>
+
+    <div class="form-group">
+      <label>Earning:</label>
+      <input type="text" class="form-control" >
+    </div>
+
+  <div class="form-group">
+    <label>Deduction:</label>
+    <input type="text" class="form-control" >
+  </div>
+
+
+
+  <div class="form-group">
+    <label>Total Amount:</label>
+    <input type="text" class="form-control" >
+  </div>
+
+
+  <!-- <input
+  style="display: none"
+  type="file" (change)="onFileChanged($event)"
+  #fileInput>
+<button class="btn btn-dark" (click)="fileInput.click()">Select File</button> -->
+
+
+
+  </form>
+
+  </div>
+

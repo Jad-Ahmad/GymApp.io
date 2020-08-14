@@ -1,0 +1,13 @@
+.jumbotron{
+  background-image: url("/assets/imgs/classes.jpg");
+  height: 460px;
+  width: 86%;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.card-deck{
+  margin-bottom: 20px;
+}
+.card-img-top{
+  height: 50%;
+}

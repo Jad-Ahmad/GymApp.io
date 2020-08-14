@@ -1,0 +1,23 @@
+<ng-template #setting let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Accounting Issues</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="container-fluid">
+
+        <button type="button" class="btn btn-dark btn-lg btn-block" routerLink="/CreateBills"  (click)="d()">Create Bill</button>
+        <br/>
+
+        <button   type="button" class="btn btn-dark btn-lg btn-block" routerLink="/CreateStatment"  (click)="d()">Create Statment</button>
+<br/>
+        <button  type="button" class="btn btn-dark btn-lg btn-block" routerLink="/Report"  (click)="d()">Make Report</button>
+      </div>
+
+    </form>
+  </div>
+
+</ng-template>

@@ -1,0 +1,23 @@
+.table{
+
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.Welcome{
+  color: white;
+  margin-top: 10%;
+}
+
+.Chart{
+  display: block;
+  width: 500px;
+  height: 300px;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+
+#navbarDropdown{
+  color: white;
+}

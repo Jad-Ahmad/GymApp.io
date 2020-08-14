@@ -1,0 +1,13 @@
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+
+}
+
+.card-deck{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.card-img-top{
+  height: 50%;
+}

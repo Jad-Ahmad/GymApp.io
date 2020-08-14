@@ -1,0 +1,156 @@
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" routerLink="/HomePage">PowerHouseGym</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/classes">Classes<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/Coaches">coaches <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <!-- <span class="navbar-text"> -->
+      <div style="text-align: right;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/Login">Login <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/SignUp">SignUp <span class="sr-only">(current)</span></a>
+          </li>
+
+      </ul>
+      </div>
+    <!-- </span> -->
+  </div>
+</nav>
+
+
+
+
+
+
+
+<div class="container-sm">
+  <div class="jumbotron">
+    <h1 class="jumbotronh1">Here We GOOO</h1>
+  </div>
+
+
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="assets/imgs/bodybuilding.jpg" alt="Body building">
+      <div class="card-body">
+        <h5 class="card-title">Body building</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark btn-lg btn-block" (click)="open(content)">Register</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/imgs/KarateLogo.jpg" alt="Karate">
+      <div class="card-body">
+        <h5 class="card-title">Karate</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark btn-lg btn-block" (click)="open(content)">Register</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/imgs/jombaz.jpg" alt="Jombaz">
+      <div class="card-body">
+        <h5 class="card-title">Jombaz</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark btn-lg btn-block" (click)="open(content)">Register</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="assets/imgs/boxing.jpg" alt="Boxing">
+      <div class="card-body">
+        <h5 class="card-title">Boxing</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark btn-lg btn-block" (click)="open(content)">Register</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img class="card-img-top" src="assets/imgs/Taekwondo.jpg" alt="Taekwondo">
+      <div class="card-body">
+        <h5 class="card-title">Teakwondo</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark btn-lg btn-block" (click)="open(content)">Register</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/imgs/swimming.jpg" alt="Swimming">
+      <div class="card-body">
+        <h5 class="card-title">Swimming</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-dark btn-lg btn-block" (click)="open(content)">Register</button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Register Here</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="container-fluid">
+
+          <!-- <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password.</div> -->
+          <br />
+          <label for="UserName" class="sr-only">UserName</label>
+          <input type="text" id="UserName" name="UserName" ngModel class="form-control" placeholder="User Name" required
+            autofocus>
+          <br />
+          <label for="Password" class="sr-only">Password</label>
+          <input type="password" id="Password" name="Password" ngModel class="form-control" placeholder="Password"
+            required>
+          <br />
+        </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Submit</button>
+    </div>
+  </ng-template>
+
+

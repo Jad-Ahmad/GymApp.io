@@ -1,0 +1,195 @@
+
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+              <a class="navbar-brand" routerLink="/HomePage">PowerHouseGym</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <!-- <span class="navbar-text"> -->
+                  <div style="text-align: right;">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                       <p class="Welcome">Welcome</p>
+                      </li>
+
+                      <li class="nav-item active">
+                        <div class="row">
+                          <div class="col">
+
+                            </div>
+                                  <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
+                                    <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button" style="color: white;">
+                                      <span class="material-icons">
+                                        person_outline
+                                        </span>
+                                    </a>
+                                    <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                                          <button class="dropdown-item" routerLink="/settings" ><span class="material-icons">
+                                            settings
+                                            </span></button>
+                                          <button class="dropdown-item button"><span class="material-icons">
+                                            exit_to_app
+                                            </span></button>
+                                    </div>
+                                </li>
+                          </div>
+
+                      </li>
+                            <li class="nav-item active">
+
+                             </li>
+
+
+                      <li class="nav-item active">
+                        <!-- <i class="fa fa-sign-out"></i> -->
+                        <!-- <p style="margin-left: auto; color: brown;">Hello! <span class="sr-only">(current)</span></p> -->
+                      </li>
+
+                  </ul>
+                  </div>
+                <!-- </span> -->
+              </div>
+</nav>
+
+
+
+
+<div class="container">
+
+<div class="row">
+
+  <div class="col">
+
+    <div class="row py-1">
+      <div class="col-md-5 py-1">
+          <div class="card">
+              <div class="card-body">
+                  <div class="Chart">
+                    <p>Blood presure</p>
+                    <canvas id="chart"></canvas>
+               </div>
+             </div>
+                  </div>
+                   </div>
+      </div>
+
+  </div>
+  <div class="col">
+      <div class="row py-1">
+        <div class="col-md-5 py-1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="Chart">
+                      <p>Your Step</p>
+                      <canvas id="Stepchart">
+                      </canvas>
+                 </div>
+               </div>
+                    </div>
+                     </div>
+        </div>
+  </div>
+
+
+</div>
+<div class="row">
+  <div class="col-sm-9 col-md-6 col-lg-6">
+  <table class="table" style="width: 100%;" >
+
+    <thead class="thead-dark">
+      <tr><h3>Schedule</h3></tr>
+      <tr>
+        <th scope="col">Class Name</th>
+        <th scope="col">Class Time</th>
+        <th scope="col">Class Days</th>
+        <th scope="col">Class Cost</th>
+      </tr>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">1</th>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">2</th>
+    <td>Jacob</td>
+    <td>Thornton</td>
+    <td>@fat</td>
+  </tr>
+  <tr>
+    <th scope="row">3</th>
+    <td>Larry</td>
+    <td>the Bird</td>
+    <td>@twitter</td>
+  </tr>
+</tbody>
+
+
+    </table>
+
+  </div>
+  <div class="col-sm-9 col-md-6 col-lg-6">
+  <table class="table" style="width: 100%;">
+
+    <thead class="thead-dark">
+      <tr><h3>Salary Statement</h3></tr>
+      <tr>
+        <th scope="col">Statment No</th>
+
+        <th scope="col">Date</th>
+        <th scope="col">Total Amount</th>
+        <th scope="col"> </th>
+      </tr>
+    </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+
+          <td>@mdo</td>
+          <td><button class="btn btn-link">Details</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>@fat</td>
+          <td><button class="btn btn-link">Details</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>@twitter</td>
+          <td><button class="btn btn-link">Details</button></td>
+        </tr>
+
+      </tbody>
+  </table>
+  </div>
+  </div>
+
+  <!-- <button onclick="window.print()">Print this page</button> -->
+
+
+
+
+
+
+
+

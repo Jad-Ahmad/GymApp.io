@@ -1,0 +1,189 @@
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+              <a class="navbar-brand" routerLink="/HomePage">PowerHouseGym</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+
+
+                <ul class="navbar-nav mr-auto">
+
+                  <li class="nav-item active">
+                    <a class="nav-link" routerLink="/AddMember">Members<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" routerLink="/">Accounting<span class="sr-only">(current)</span></a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" routerLink="/">Classes<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <!-- <span class="navbar-text"> -->
+                  <div style="text-align: right;">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                       <p class="Welcome">Welcome</p>
+                      </li>
+
+                      <li class="nav-item active">
+                        <div class="row">
+                          <div class="col">
+
+                            </div>
+                                  <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
+                                    <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button" style="color: white;">
+                                      <span class="material-icons">
+                                        person_outline
+                                        </span>
+                                    </a>
+                                    <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                                          <button class="dropdown-item" routetLink="/settings"><span class="material-icons">
+                                            settings
+                                            </span></button>
+                                          <button class="dropdown-item button"><span class="material-icons">
+                                            exit_to_app
+                                            </span></button>
+                                    </div>
+                                </li>
+                          </div>
+
+                      </li>
+
+                  </ul>
+                  </div>
+                <!-- </span> -->
+              </div>
+</nav>
+
+<div class="container">
+
+  <div class="row">
+    <div class="card border-primary mb-3" style="max-width: 16rem; margin: 10px; max-height: 16em;">
+      <div class="card-body text-primary">
+        <h5 class="card-title">Goals achivments</h5>
+        <p class="card-text">Try to service best fitness center in the world. carfully service is what the trainees needs. reach the best by service best.</p>
+        <p><ngb-progressbar [showValue]="true" type="primary" [value]="50"></ngb-progressbar></p>
+      </div>
+    </div>
+    <div class="card border-warning mb-3" style="max-width: 16rem; margin: 10px; max-height: 16em;">
+      <div class="card-body text-warning">
+        <h5 class="card-title">Employee Obligations</h5>
+        <ul>
+          <li>Responsibilty for actions</li>
+          <li>Acountable for results</li>
+          <li>lessable mistakes</li>
+          <li>Motivated Employees</li>
+          <li>High cooperation</li>
+        </ul>
+        <p><ngb-progressbar [showValue]="true" type="warning" [value]="150" [max]="200"></ngb-progressbar></p>
+      </div>
+    </div>
+    <div class="card border-success mb-3" style="max-width: 16rem; margin: 10px; max-height: 16em;">
+      <div class="card-body text-success">
+        <h5 class="card-title ">Sales benefits</h5>
+        <p class="card-text">Sales is not about selling anymore, but about building trust and education butween us and trainees. sales benefits is our trainees satisfaction </p>
+        <p><ngb-progressbar [showValue]="true" type="success" [value]="25"></ngb-progressbar></p>
+      </div>
+    </div>
+    <div class="card border-danger mb-3" style="max-width: 16rem; margin: 10px; max-height: 16em;">
+      <div class="card-body text-danger">
+        <h5 class="card-title">Equipments & Tools</h5>
+        <ul>
+          <li>Residents use it carfully</li>
+          <li>Always wiped down after use</li>
+          <li>Report faulty equipments</li>
+        </ul>
+        <p><ngb-progressbar [showValue]="true" type="danger" [value]="150" [max]="150"></ngb-progressbar></p>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  <div class="container">
+    <div class="card-columns" style="margin-left: 20px;">
+         <div class="card" style="margin-top: 20px;">
+            <div class="card-body">
+              <div style="display: block">
+                <canvas mdbChart
+                    [chartType]="chartType"
+                    [datasets]="chartDatasets"
+                    [labels]="chartLabels"
+                    [colors]="chartColors"
+                    [options]="chartOptions"
+                    [legend]="true"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">
+                </canvas>
+              </div>
+         </div>
+      </div>
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">Our Goal</h5>
+            <p class="card-text">Is simply to become the best GYM service to our trainees in this world .</p>
+            <p class="card-text"><small class="text-muted">Gym Leader</small></p>
+          </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body">
+          <h4> Equipment Usage</h4>
+          <div id="circleProgress6" class="progressbar-js-circle border rounded p-3"><svg viewBox="0 0 100 100" style="display: block; width: 100%;">
+            <path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#eee" stroke-width="4" fill-opacity="0"></path>
+            <path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(42,46,59)" stroke-width="4" fill-opacity="0" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 15.0818;"></path>
+            </svg>
+           <div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; text-align:center; transform: translate(-50%, -50%); color: rgb(0, 0, 0); font-size: 1rem;">95%</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="card bg-dark text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>I'am a <strong>Greatest</strong> I said that even before I knew I was.</p>
+                <footer class="blockquote-footer">
+                  <small>
+                    Muhmmad Ali
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+
+
+      <div class="card p-3 text-right" style="height: 250px; margin-top: 20px; width: 17rem;">
+        <h3 style="text-align: left;">Sales</h3>
+        <div id="circleProgress6" class="progressbar-js-circle border rounded p-3"><svg viewBox="0 0 100 100" style="display: block; width: 100%; height:140px">
+          <path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#eee" stroke-width="4" fill-opacity="0"></path>
+          <path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(108,185,124)" stroke-width="4" fill-opacity="0" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 220.194;"></path>
+      </svg>
+      <div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin-top: 20px; transform: translate(-50%, -50%); color: rgb(0, 0, 0); font-size: 1rem;">25%</div>
+  </div>
+      </div>
+      <div class="card" style="width: 17rem;">
+        <div class="card-body">
+          <p></p>
+
+          <ngb-datepicker [(ngModel)]="model" ></ngb-datepicker>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+

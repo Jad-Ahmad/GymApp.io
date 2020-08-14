@@ -1,0 +1,178 @@
+
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+              <a class="navbar-brand" routerLink="/HomePage">PowerHouseGym</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+
+
+                <ul class="navbar-nav mr-auto">
+
+                  <li class="nav-item active">
+                    <a class="nav-link" routerLink="/AddMember">Members<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" (click)="open(content)">Accounting<span class="sr-only">(current)</span></a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" routerLink="/">Classes<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <!-- <span class="navbar-text"> -->
+                  <div style="text-align: right;">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                       <p class="Welcome">Welcome</p>
+                      </li>
+
+
+                      <li class="nav-item active">
+                        <div class="row">
+                          <div class="col">
+
+                            </div>
+                                  <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
+                                    <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button" style="color: white;">
+                                      <span class="material-icons">
+                                        person_outline
+                                        </span>
+                                    </a>
+                                    <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                                          <button class="dropdown-item"><span class="material-icons">
+                                            settings
+                                            </span></button>
+                                          <button class="dropdown-item button"><span class="material-icons">
+                                            exit_to_app
+                                            </span></button>
+                                    </div>
+                                </li>
+                          </div>
+
+                      </li>
+
+
+                  </ul>
+                  </div>
+                <!-- </span> -->
+              </div>
+</nav>
+
+
+
+
+<div class="container">
+<div class="card-columns">
+     <div class="card" style="margin-top: 20px;">
+        <img class="card-img-top" src="assets/imgs/ut.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">our Utube channel</h5>
+          <p class="card-text">3.000.000 followers</p>
+          <p>
+            4.7 million
+            <span class="material-icons">
+            star  star star_half  star_border
+            </span>
+
+             </p>
+     </div>
+  </div>
+    <div class="card p-3">
+     <blockquote class="blockquote mb-0 card-body">
+      <p>To succeed I've to believe every night, in my heart, that I am the best.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          John Cena
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card" style="margin-top: 20px;">
+    <img class="card-img-top" src="assets/imgs/fb.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Facebook Feedbacks</h5>
+      <p class="card-text">Trying to be the best</p>
+        <span class="material-icons">
+        thumb_up_alt
+        </span> 20 K <span class="material-icons">
+          thumb_down_alt
+          </span> 1.2 K
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card bg-dark text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>I'am a <strong>Greatest</strong> I said that even before I knew I was.</p>
+      <footer class="blockquote-footer">
+        <small>
+          Muhmmad Ali
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center" style="margin-top: 20px;">
+    <div class="card-body">
+      <h5 class="card-title">Our Goal</h5>
+      <p class="card-text">Is simply to become the best GYM service to our trainees in this world .</p>
+      <p class="card-text"><small class="text-muted">Gym Leader</small></p>
+    </div>
+  </div>
+
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p><strong>"DON'T</strong> Count the<strong> DAYS; </strong>
+        <strong> MAKE </strong> the Days <strong> COUNT </strong>."</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+         Muhmmad Ali
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Success in our logic</h5>
+      <p class="card-text">"Success Usually comes To those who are too busy to be Looking for IT"</p>
+      <p class="card-text"><small class="text-muted">Henry David Thoreau</small></p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Accounting Issues</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="container-fluid">
+
+        <button type="button" class="btn btn-dark btn-lg btn-block" routerLink="/CreateBills"  (click)="d()">Create Bill</button>
+        <br/>
+
+        <button   type="button" class="btn btn-dark btn-lg btn-block" routerLink="/CreateStatment"  (click)="d()">Create Statment</button>
+<br/>
+        <button  type="button" class="btn btn-dark btn-lg btn-block" routerLink="/Report"  (click)="d()">Make Report</button>
+      </div>
+
+    </form>
+  </div>
+
+</ng-template>
